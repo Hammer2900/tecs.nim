@@ -60,7 +60,7 @@ type
     ## of everything else. The world is responsible for the storage of entities 
     ## and for the storage of components, 
     ## with their subsequent implementation.
-    entities: seq[Entity]
+    entities*: seq[Entity]
     freeEntities: seq[uint32]
     currentEntityId*: uint32
     maxEntityId*: uint32
